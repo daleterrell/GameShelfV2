@@ -54,18 +54,18 @@ public class DesignerController {
         Optional<Designer> optionalDesigner = designerRepository.findById(id);
         Designer designer = optionalDesigner.get();
 
-        director.setFirstName(designerDetails.getFirstName());
-        director.setLastName(designerDetails.getLastName());
-        director.setDateOfBirth(designerDetails.getDateOfBirth());
+        designer.setFirstName(designerDetails.getFirstName());
+        designer.setLastName(designerDetails.getLastName());
+        designer.setDateOfBirth(designerDetails.getDateOfBirth());
 
-        directorRepository.save(designer);
+        designerRepository.save(designer);
         return "Updated";
 
     }
 
     @DeleteMapping(path = "/{id}")
     public String deleteActor(@PathVariable(value = "id") Integer id) {
-        directorRepository.deleteById(id);
+        designerRepository.deleteById(id);
         return "Deleted";
     }
 
