@@ -15,22 +15,22 @@ import org.springframework.web.bind.annotation.RestController;
 public class MovieController {
 
     @Autowired
-    private MovieRepository movieRepository;
+    private MovieRepository gameRepository;
 
     @GetMapping(path = "")
-    public Iterable<Movie> getAllMovies() {
-        return movieRepository.findAll();
+    public Iterable<Movie> getAllGames() {
+        return gameRepository.findAll();
     }
 
     @GetMapping(path = "/{id}")
-    public Movie getMovie(@PathVariable(value = "id") Integer id) {
-        Optional<Movie> movie = movieRepository.findById(id);
-        return movie.get();
+    public Game getGame(@PathVariable(value = "id") Integer id) {
+        Optional<Game> game = gameRepository.findById(id);
+        return game.get();
     }
 
     @PostMapping(path = "/")
-    public Movie createMovie(@RequestBody Movie movie) {
-        return movieRepository.save(movie);
+    public Game createGame(@RequestBody Game game) {
+        return gameRepository.save(game);
     }
 
 }

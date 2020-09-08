@@ -55,7 +55,6 @@ public class DesignerController {
 
         designer.setFirstName(designerDetails.getFirstName());
         designer.setLastName(designerDetails.getLastName());
-        designer.setDateOfBirth(designerDetails.getDateOfBirth());
 
         designerRepository.save(designer);
         return "Updated";

@@ -2,8 +2,8 @@ package org.aim.movie.movie;
 
 import org.springframework.data.repository.CrudRepository;
 
-import org.aim.movie.movie.Movie;
+import org.aim.movie.movie.Game;
 
-public interface MovieRepository extends CrudRepository<Movie, Integer> {
+public interface GameRepository extends CrudRepository<Game, Integer> {
 
 }

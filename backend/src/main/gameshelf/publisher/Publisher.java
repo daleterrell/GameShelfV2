@@ -1,4 +1,4 @@
-package org.aim.movie.movie;
+package org.aim.movie.publisher;
 
 import java.util.Date;
 import java.util.List;
