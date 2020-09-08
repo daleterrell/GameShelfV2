@@ -21,8 +21,6 @@ public class Designer {
 
     private String lastName;
 
-    private Date dateOfBirth;
-
     public Integer getId() {
         return id;
     }
@@ -46,13 +44,4 @@ public class Designer {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
-    public Date getDateOfBirth() {
-        return dateOfBirth;
-    }
-
-    public void setDateOfBirth(Date dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
-    }
-
 }
