@@ -1,4 +1,4 @@
-package org.aim.movie.publisher;
+package org.aim.gameshelf.publisher;
 
 import org.springframework.data.repository.CrudRepository;
 

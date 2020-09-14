@@ -1,4 +1,4 @@
-package org.aim.movie.publisher;
+package org.aim.gameshelf.publisher;
 
 import java.util.Date;
 import java.util.List;

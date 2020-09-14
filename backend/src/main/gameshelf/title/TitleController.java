@@ -1,4 +1,4 @@
-package org.aim.movie.movie;
+package org.aim.gameshelf.title;
 
 import java.util.Optional;
 

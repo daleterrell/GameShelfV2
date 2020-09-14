@@ -1,3 +1,5 @@
+package aim.org.gameshelf.publisher;
+
 import java.util.NoSuchElementException;
 import java.util.Optional;
 

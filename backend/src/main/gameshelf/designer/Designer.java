@@ -1,3 +1,4 @@
+package org.aim.gameshelf.designer;
 
 import java.util.Date;
 
