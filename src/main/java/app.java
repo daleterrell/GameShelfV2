@@ -1,4 +1,4 @@
-package package org.aim.gameshelf;
+package org.aim.gameshelf;
 
 public class app {
     class UserInput {
