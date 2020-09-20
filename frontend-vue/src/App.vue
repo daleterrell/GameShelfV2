@@ -2,14 +2,9 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> 
-      <router-link to="/ledger">Business Ledger</router-link>
-      <router-link to="/clients">Clients</router-link> 
-      <router-link to="/projects">Projects</router-link>
-      <router-link to="/expenses">Expenses</router-link>
-      <router-link to="/revenue">Revenue</router-link>
-      <router-link to="/wood">Wood Inventory</router-link>
-      <router-link to="/timeclock">Time Clock</router-link>
-      <router-link to="/shoppinglist">Shopping List</router-link>
+      <router-link to="/title">Board Games</router-link>
+      <router-link to="/designer">Designers</router-link> 
+      <router-link to="/publisher">Publishers</router-link>
       
       <div id="nav-icons">
       <router-link to="/userprofile"><i class="fas fa-user"></i></router-link>
