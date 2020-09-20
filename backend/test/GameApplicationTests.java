@@ -1,10 +1,10 @@
-package org.aim.movie;
+package org.aim.gameshelf;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MovieApplicationTests {
+class GameApplicationTests {
 
     @Test
     void contextLoads() {

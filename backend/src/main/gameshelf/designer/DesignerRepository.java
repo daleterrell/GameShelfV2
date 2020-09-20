@@ -1,4 +1,4 @@
-package org.aim.game.designer;
+package org.aim.gameshelf.designer;
 
 import org.springframework.data.repository.CrudRepository;
 
