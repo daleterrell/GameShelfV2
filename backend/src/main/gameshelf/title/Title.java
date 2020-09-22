@@ -16,10 +16,7 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-import org.aim.movie.actor.Actor;
-import org.aim.movie.director.Director;
-import org.aim.movie.genre.Genre;
-import org.aim.movie.rating.Rating;
+import org.aim.movie.gameshelf
 
 @Entity
 @Table(name = "games")
@@ -34,11 +31,11 @@ public class Games {
     private String gameTitle;
 
     @ManyToOne
-    @JoinColumn(name = "designer_id", nullable = false)
-    private Designer designer;
+    @JoinColumn(name = "title", nullable = false)
+    private Title title;
 
     @ManyToMany
-    @JoinTable(name = "designer", joinColumns = @JoinColumn(name = "game_id"), inverseJoinColumns = @JoinColumn(name = "designer_id"))
+    @JoinTable(name = "title", joinColumns = @JoinColumn(name = "game_id"), inverseJoinColumns = @JoinColumn(name = "title_id"))
     private List<Designer> designers;
 
     public Integer getId() {
@@ -53,8 +50,8 @@ public class Games {
         return gameTitle;
     }
 
-    public void setDesigner(Designer designer) {
-        this.designer = designer;
+    public void setTitle(Title title) {
+        this.title;
     }
 
 }
