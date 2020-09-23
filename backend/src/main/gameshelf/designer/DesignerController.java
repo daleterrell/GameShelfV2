@@ -1,5 +1,8 @@
 package org.aim.gameshelf.designer;
 
+import org.aim.gameshelf.title;
+import org.aim.gameshelf.publisher;
+
 import java.util.NoSuchElementException;
 import java.util.Optional;
 

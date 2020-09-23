@@ -1,5 +1,8 @@
 package org.aim.gameshelf.publisher;
 
+import org.aim.gameshelf.title;
+import org.aim.gameshelf.designer;
+
 import java.util.Date;
 import java.util.List;
 
