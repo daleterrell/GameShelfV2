@@ -1,5 +1,8 @@
 package org.aim.gameshelf.publisher;
 
+import org.aim.gameshelf.title;
+import org.aim.gameshelf.designer;
+
 import java.util.Date;
 import java.util.List;
 
@@ -15,11 +18,6 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-
-import org.aim.movie.actor.Actor;
-import org.aim.movie.director.Director;
-import org.aim.movie.genre.Genre;
-import org.aim.movie.rating.Rating;
 
 @Entity
 @Table(name = "publisher")
