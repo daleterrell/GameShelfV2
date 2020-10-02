@@ -4,15 +4,15 @@
 CREATE TABLE boardgames (
 	game_id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(50) NOT NULL,
-    designer VARCHAR(50) NOT NULL,
-    publisher VARCHAR(50) NOT NULL,  
+    designer VARCHAR(50),
+    publisher VARCHAR(50)
 );
 
 TRUNCATE TABLE boardgames (
 	insert into boardgames (title, designer, publisher) values ('The Grizzled', 'Fabien Riffaud, Juan Rodriguez', 'Sweet Games'),
     insert into boardgames (title, designer, publisher) values ('Fluxx', 'Andrew Looney, Kristen Looney', 'Looney Labs'),
     insert into boardgames (title, designer, publisher) values ('Betrayal at House on the Hill', 'Dennis Crabapple McClain, Christopher Moeller, Peter Whitley', 'Avalon Hill'),  
-    insert into boardgames (title, designer, publisher) values ('This War of Mine: The Board Game',  'Paweł Niziołek, Michał Oracz, Piotr Gacek', 'Awaken Realms')
+    insert into boardgames (title, designer, publisher) values ('This War of Mine: The Board Game',  'Paweł Niziołek, Michał Oracz, Piotr Gacek', 'Awaken Realms'),
     insert into boardgames (title, designer, publisher) values ('Ticket to Ride', 'Alan R. Moon', 'Days of Wonder'),
     insert into boardgames (title, designer, publisher) values ('Munchkin', 'Steve Jackson', 'Steve Jackson Games'),
     insert into boardgames (title, designer, publisher) values ('Terraforming Mars', 'Jacob Fryxelius', 'FryxGames'),
@@ -47,7 +47,7 @@ TRUNCATE TABLE boardgames (
 	insert into boardgames (title, designer, publisher) values ('Jaipur', 'Sebastien Pauchon', 'GameWorks'),
 	insert into boardgames (title, designer, publisher) values ('Targi', 'Andreas Steiger', 'KOSMOS'),
 	insert into boardgames (title, designer, publisher) values ('Munchkin Rick and Morty', 'Casey Sershon', 'Steve Jackson Games'),
-	insert into boardgames (title, designer, publisher) values ('Castle Panic', 'Justin De Witt', 'Fireside Games'),
+	insert into boardgames (title, designer, publisher) values ('Castle Panic', 'Justin De Witt', 'Fireside Games')
     )
 	
 
