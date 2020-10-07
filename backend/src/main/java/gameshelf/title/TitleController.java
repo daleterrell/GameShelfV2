@@ -1,5 +1,8 @@
 package org.aim.gameshelf.title;
 
+import org.aim.gameshelf.publisher;
+import org.aim.gameshelf.designer;
+
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MovieController {
 
     @Autowired
-    private MovieRepository gameRepository;
+    private GameRepository gameRepository;
 
     @GetMapping(path = "")
     public Iterable<Movie> getAllGames() {

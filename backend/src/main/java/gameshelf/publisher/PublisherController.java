@@ -1,4 +1,7 @@
-package org.aim.gameshelf.designer;
+package org.aim.gameshelf.publisher;
+
+import org.aim.gameshelf.title;
+import org.aim.gameshelf.designer;
 
 import java.util.NoSuchElementException;
 import java.util.Optional;
@@ -21,20 +24,20 @@ import org.springframework.web.bind.annotation.RestController;
 public class DesignerController {
 
     @Autowired
-    private DesignerRepository designerRepository;
+    private DesignerRepository publisherRepository;
 
     @GetMapping(path = "")
-    public Iterable<Designer> getAllDesigners() {
-        return designerRepository.findAll();
+    public Iterable<Designer> getAllPublishers() {
+        return publisherRepository.findAll();
     }
 
     @GetMapping(path = "/{id}")
-    public Designer getDesigner(@PathVariable(value = "id") Integer id, HttpServletResponse response) {
-        Optional<Designer> designer = designerRepository.findById(id);
+    public Publisher getPublisher(@PathVariable(value = "id") Integer id, HttpServletResponse response) {
+        Optional<Designer> publisher = publisherRepository.findById(id);
 
         try {
 
-            return designer.get();
+            return publisher.get();
 
         } catch (NoSuchElementException nsee) {
             nsee.printStackTrace();
@@ -45,28 +48,25 @@ public class DesignerController {
     }
 
     @PostMapping(path = "/")
-    public String createDesigner(@RequestBody Designer designer) {
-        designerRepository.save(designerr);
+    public String createPublisher(@RequestBody Publisher publisher) {
+        publisherRepository.save(publisher);
         return "Saved";
     }
 
     @PutMapping(path = "/{id}")
-    public String updateDesigner(@PathVariable(value = "id") Integer id, @RequestBody Designer designerDetails) {
+    public String updatePublisher(@PathVariable(value = "id") Integer id, @RequestBody Publisher publisherDetails) {
         Optional<Designer> optionalDesigner = designerRepository.findById(id);
-        Designer designer = optionalDesigner.get();
+        Publisher publisher = optionalPublisher.get();
 
-        designer.setFirstName(designerDetails.getFirstName());
-        designer.setLastName(designerDetails.getLastName());
-        designer.setDateOfBirth(designerDetails.getDateOfBirth());
-
+        designer.setName(publisherDetails.getName());
         designerRepository.save(designer);
         return "Updated";
 
     }
 
     @DeleteMapping(path = "/{id}")
-    public String deleteActor(@PathVariable(value = "id") Integer id) {
-        designerRepository.deleteById(id);
+    public String deletePublisher(@PathVariable(value = "id") Integer id) {
+        publisherRepository.deleteById(id);
         return "Deleted";
     }
 

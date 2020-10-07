@@ -1,4 +1,7 @@
-package aim.org.gameshelf.publisher;
+package org.aim.gameshelf.designer;
+
+import org.aim.gameshelf.title;
+import org.aim.gameshelf.publisher;
 
 import java.util.NoSuchElementException;
 import java.util.Optional;
@@ -57,6 +60,7 @@ public class DesignerController {
 
         designer.setFirstName(designerDetails.getFirstName());
         designer.setLastName(designerDetails.getLastName());
+        designer.setDateOfBirth(designerDetails.getDateOfBirth());
 
         designerRepository.save(designer);
         return "Updated";
@@ -64,7 +68,7 @@ public class DesignerController {
     }
 
     @DeleteMapping(path = "/{id}")
-    public String deleteDesigner(@PathVariable(value = "id") Integer id) {
+    public String deleteActor(@PathVariable(value = "id") Integer id) {
         designerRepository.deleteById(id);
         return "Deleted";
     }
