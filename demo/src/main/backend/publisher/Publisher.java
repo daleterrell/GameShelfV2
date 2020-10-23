@@ -62,10 +62,20 @@ public class Publisher {
     }
 
     Scanner userpub = new Scanner(System.in);
-    System.out.println("Please enter a publisher.");
+    System.out.println("Please enter a publisher:");
 
     String userpub = myObj.nextLine();
     System.out.println(userpub + "has published")
+    
+    Scanner userdes = new Scanner(System.in);
+    System.out.println("Please enter the name of a designer:");
 
+    String userdes = myObj.nextLine();
+    System.out.println(userdes +"has designed");
+
+    String usertitle = new Scanner(System.in);
+    System.out.println("Please enter the name of a game:");
+
+    String usertitle = myObj.nextLine();
 
     }
