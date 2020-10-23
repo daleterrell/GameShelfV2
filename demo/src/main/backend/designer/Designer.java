@@ -47,4 +47,11 @@ public class Designer {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+    Scanner userdes = new Scanner(System.in);
+    System.out.println("Please enter the name of a designer:");
+
+    String userdes = myObj.nextLine();
+    System.out.println(userdes +"has designed");
+
 }

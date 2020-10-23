@@ -5,7 +5,7 @@ import org.aim.gameshelf.designer;
 
 import java.util.Date;
 import java.util.List;
-
+import java.util.Scanner;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -58,4 +58,8 @@ public class Games {
         this.designer = designer;
     }
 
+    String usertitle = new Scanner(System.in);
+    System.out.println("Please enter the name of a game:");
+
+    String usertitle = myObj.nextLine();
 }
