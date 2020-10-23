@@ -1,11 +1,11 @@
-package org.aim.gameshelf.title;
+package org.aim.gameshelfv1.title;
 
-import org.aim.gameshelf.publisher;
-import org.aim.gameshelf.designer;
+import org.aim.gameshelfv1.publisher;
+import org.aim.gameshelfv1.designer;
 
 import org.springframework.data.repository.CrudRepository;
 
-import org.aim.movie.movie.game;
+import org.aim.gameshelfv1.game;
 
 public interface GameRepository extends CrudRepository<Game, Integer> {
 
