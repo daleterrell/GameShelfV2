@@ -1,6 +1,9 @@
 package org.aim.gameshelf.publisher;
 
 import org.aim.gameshelf.title;
+
+import ch.qos.logback.core.net.SyslogOutputStream;
+
 import org.aim.gameshelf.designer;
 
 import java.util.Date;
@@ -58,4 +61,11 @@ public class Publisher {
         this.publisher = publisher;
     }
 
-}
+    Scanner userpub = new Scanner(System.in);
+    System.out.println("Please enter a publisher.");
+
+    String userpub = myObj.nextLine();
+    System.out.println(userpub + "has published")
+
+
+    }
